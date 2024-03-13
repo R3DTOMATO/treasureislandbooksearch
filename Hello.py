@@ -33,7 +33,7 @@ class MultiApp:
         app = option_menu(
         menu_title=None,
         options=["책명","작가"],
-        icons=["book","writing_hand"],
+        icons=["book","writing"],
         menu_icon="cast",
         default_index=0,
         orientation="horizontal",
