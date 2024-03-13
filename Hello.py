@@ -11,6 +11,7 @@ st.set_page_config(
 )
 
 st.image('보물섬타이틀.jpg')
+st.divider()
 
 with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
