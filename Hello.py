@@ -10,7 +10,9 @@ st.set_page_config(
    layout="wide",
 )
 
-st.header(image='보물섬로고 (1).jpg',':green[보물섬] 도서검색사이트입니다. ', divider='green')
+image=Image.open('보물섬로고 (1).jpg')
+
+st.header(image,':green[보물섬] 도서검색사이트입니다. ', divider='green')
 
 with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
