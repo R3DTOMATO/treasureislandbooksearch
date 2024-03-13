@@ -13,8 +13,8 @@ st.set_page_config(
 
 
 
-st.title(':green[보물섬] 도서 검색사이트입니다. ')
-st.image('보물섬로고 (1).jpg')
+st.image('보물섬로고 (1).jpg') st.title(':green[보물섬] 도서 검색사이트입니다. ')
+
 
 with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
