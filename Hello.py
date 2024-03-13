@@ -1,8 +1,13 @@
 import streamlit as st
+import time
 
 from streamlit_option_menu import option_menu
 import bookname,writername
 
+
+with st.spinner('Wait for it...'):
+    time.sleep(5)
+st.success('Done!')
 
 class MultiApp:
     
