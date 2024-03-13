@@ -10,7 +10,7 @@ st.set_page_config(
    layout="wide",
 )
 
-st.hearder(':green[보물섬] 도서검색사이트입니다. ', divider='green')
+st.header(':green[보물섬] 도서검색사이트입니다. ', divider='green')
 
 with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
