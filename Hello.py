@@ -11,9 +11,9 @@ st.set_page_config(
 
 )
 
-image=Image.open("보물섬로고 (1).jpg")
 
-st.title(':green[보물섬] 도서 검색사이트입니다. ', image)
+
+st.title(':green[보물섬] 도서 검색사이트입니다. ')
 st.image('보물섬로고 (1).jpg')
 
 with st.spinner('잠시만 기다려주세요.'):
