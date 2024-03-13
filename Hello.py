@@ -4,13 +4,14 @@ import time
 from streamlit_option_menu import option_menu
 import bookname,writername
 
-
 st.set_page_config(
    page_title="보물섬",
    page_icon="books.png",
    layout="wide",
 
 )
+
+st.title(':green[보물섬] 도서 검색사이트입니다.")
 
 with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
