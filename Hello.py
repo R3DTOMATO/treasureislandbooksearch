@@ -10,7 +10,7 @@ st.set_page_config(
    layout="wide",
 )
 
-st.image('보물섬타이틀.jpg')
+st.image('보물섬타이틀.jpg', divider='green')
 st.divider()
 
 with st.spinner('잠시만 기다려주세요.'):
