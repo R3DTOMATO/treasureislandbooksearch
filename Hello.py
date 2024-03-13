@@ -27,7 +27,6 @@ class MultiApp:
         menu_icon="cast",
         default_index=0,
         orientation="horizontal",
-        color="green",
 )
     
         if app == "책명":
