@@ -14,7 +14,7 @@ def app():
         urllib.request.urlopen("https://drive.google.com/file/d/1qZKgawn4iYB6ADeUnWuu4s2Put7T4Ltt/view?usp=sharing")
         df = writer()
         bookSelect = st.multiselect(
-        label="작가이름을 입력하세요", options=list(df.index), default=["후지노 하루카"]
+        label="작가이름을 입력하세요", default=["후지노 하루카"]
         )
         if not bookSelect:
             st.error("작가 이름을 선택해주세요")
