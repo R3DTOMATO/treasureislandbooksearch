@@ -13,14 +13,13 @@ def app():
     try:
         urllib.request.urlopen("https://drive.google.com/file/d/1qZKgawn4iYB6ADeUnWuu4s2Put7T4Ltt/view?usp=sharing")
         df = writer()
-        bookSelect = st.multiselect(
-        label="작가이름을 입력하세요", options=list(df.index), default=["후지노 하루카"]
-        )
+        bookSelect = st.selectbox( label="작가이름을 입력하세요", options=list(df.index), index=None,placeholder="작가 이름을 선택해주세요")
+        
         if not bookSelect:
             st.error("작가 이름을 선택해주세요")
         else:
             data = df.loc[bookSelect]
-            st.write(bookSelect, data.sort_index())
+            st.write('당신 검색한 작가 이름 : ',bookSelect, data.sort_index())
 
             data = data.T.reset_index()
 
