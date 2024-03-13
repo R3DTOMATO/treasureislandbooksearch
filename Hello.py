@@ -10,8 +10,7 @@ st.set_page_config(
    layout="wide",
 )
 
-st.image('보물섬로고 (1).jpg')
-st.title(':green[보물섬] 도서검색사이트입니다. ',image='보물섬로고 (1).jpg')
+st.title(':green[보물섬] 도서검색사이트입니다. ', image='보물섬로고 (1).jpg')
 
 with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
