@@ -6,7 +6,7 @@ import bookname,writername
 
 
 st.set_page_config(
-   page_title="Ex-stream-ly Cool App",
+   page_title="보물섬",
    page_icon="🧊",
    layout="wide",
 
