@@ -7,7 +7,7 @@ import bookname,writername
 
 st.set_page_config(
    page_title="보물섬",
-   page_icon="🧊",
+   page_icon="books.png",
    layout="wide",
 
 )
