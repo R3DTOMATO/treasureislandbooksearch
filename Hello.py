@@ -23,10 +23,11 @@ class MultiApp:
         app = option_menu(
         menu_title=None,
         options=["책명","작가"],
-        icons=["book","envelope"],
+        icons=["book","human"],
         menu_icon="cast",
         default_index=0,
         orientation="horizontal",
+        color="green",
 )
     
         if app == "책명":
