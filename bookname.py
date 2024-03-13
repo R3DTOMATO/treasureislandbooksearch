@@ -20,7 +20,7 @@ def app():
             st.error("책 이름을 선택해주세요")
         else:
             data = df.loc[bookSelect]
-            st.write('당신이 선택한 책:',bookSelect, data.sort_index())
+            st.write('당신이 선택한 책:',bookSelect, options=list(df.index))
 
             data = data.T.reset_index()
         
