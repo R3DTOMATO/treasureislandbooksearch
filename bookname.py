@@ -14,7 +14,7 @@ def app():
         urllib.request.urlopen("https://drive.google.com/file/d/1qZKgawn4iYB6ADeUnWuu4s2Put7T4Ltt/view?usp=sharing")
         df = book()
         bookSelect = st.selectbox(
-        label="책 이름을 입력하세요", options=list(df.index), placeholder="책을 선택하세요..."
+        label="책 이름을 입력하세요", index=None, placeholder="책을 선택하세요..."
         )
         if not bookSelect:
             st.error("책 이름을 선택해주세요")
