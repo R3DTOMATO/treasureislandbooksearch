@@ -19,7 +19,6 @@ def app():
         if not bookSelect:
             st.error("작가 이름을 선택해주세요")
         else:
-           
             st.write(bookSelect, data.sort_index())
 
             data = data.T.reset_index()
