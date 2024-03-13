@@ -5,9 +5,8 @@ from streamlit_option_menu import option_menu
 import bookname,writername
 
 
-with st.spinner('Wait for it...'):
+with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
-st.success('Done!')
 
 class MultiApp:
     
