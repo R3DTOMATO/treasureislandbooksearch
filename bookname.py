@@ -13,7 +13,7 @@ def app():
     try:
         urllib.request.urlopen("https://drive.google.com/file/d/1qZKgawn4iYB6ADeUnWuu4s2Put7T4Ltt/view?usp=sharing")
         df = book()
-        bookSelect = st.multiselect(
+        bookSelect = st.selectbox(
         label="책 이름을 입력하세요", options=list(df.index), default=["우리 집 늙은 고양이가 하는 말"]
         )
         if not bookSelect:
