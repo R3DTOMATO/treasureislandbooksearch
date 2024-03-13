@@ -18,11 +18,7 @@ def app():
         )
         if not bookSelect:
             st.error("책 이름을 선택해주세요")
-        else:
-            data = df.loc[bookSelect]
-            st.write(bookSelect, data.sort_index())
-
-            data = data.T.reset_index()
+        
 
     except urllib.error.URLError as e:
         print ('Error code: ', e.code)
