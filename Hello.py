@@ -9,8 +9,11 @@ with st.spinner('잠시만 기다려주세요.'):
     time.sleep(5)
 
 st.set_page_config(
-    page_title="보물섬",
-    page_icon="")
+   page_title="Ex-stream-ly Cool App",
+   page_icon="🧊",
+   layout="wide",
+   initial_sidebar_state="expanded",
+)
 
 
 class MultiApp:
