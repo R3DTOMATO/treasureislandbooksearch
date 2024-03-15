@@ -13,8 +13,8 @@ def app():
     try:
         urllib.request.urlopen("https://drive.google.com/file/d/1qZKgawn4iYB6ADeUnWuu4s2Put7T4Ltt/view?usp=sharing")
         df = book()
-        bookSelect = st.selectbox(
-        label="책 이름을 입력하세요", options=list(df.index),index=None, placeholder="책을 선택하세요..."
+        bookSelect = st.multiselect(
+        label="책 이름을 입력하세요", options=list(df.index), default=None
         )
         if not bookSelect:
             st.error("책 이름을 선택해주세요")
