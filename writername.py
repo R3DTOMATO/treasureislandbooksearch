@@ -7,7 +7,7 @@ def app():
     def writer():
         url="https://drive.google.com/file/d/1nPqkspdr4l_BZf6mo4rShBkxVOohg251/view?usp=sharing"
         response = urllib.request.urlopen(url)
-        df = pd.read_csv("도서정보2.csv", encoding='cp949')
+        df = pd.read_csv("도서정보.csv")
         return df.set_index("작가")
 
     try:
